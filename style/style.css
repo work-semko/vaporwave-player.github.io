@@ -1,0 +1,204 @@
+
+body {
+    overflow: hidden;
+    min-width: 1920px;
+}
+#table {
+    position: absolute;
+    top: 0px;
+    left: 0px; 
+    width:100%;
+    height: 100%;
+    filter: brightness(0.7);
+}
+#loading {
+    position: absolute;
+    left: 30%;
+    top:4%;
+    width: 33%;
+   
+    z-index: 2;
+}
+#comp {
+    position: absolute;
+    top: 0px;
+    left: 0px; 
+    width:100%;
+    z-index: 4;
+}
+#window {
+    position: absolute;
+    top: 0px;
+    left: 0px; 
+    width:100%;
+}
+#shadow {
+    position: absolute;
+    top: 0px;
+    left: 0px; 
+    width:100%;
+}
+#cat {
+    position: absolute;
+    width:99%;
+    z-index: 1;
+}
+#player1 {
+    position: absolute;
+    top: 0px;
+    left: 0px; 
+    width:100%;
+    z-index: 4;
+}
+#cassete-light {
+    position: absolute;
+    top: 0px;
+    left: 0px; 
+    width:100%;
+    z-index: 3;
+    filter: brightness(0.7);
+}
+#left-right {
+    position: absolute;
+    top: 0px;
+    left: 2.3%; 
+    width:95%;
+    z-index: 3;
+}
+#stereo {
+    position: absolute;
+    top: 0px;
+    left: 2.3%; 
+    width:95%;
+    z-index: 3;
+}
+
+.buttons{
+    position: relative;
+    z-index: 10;
+     
+}
+.buttonsF {
+    position: absolute;
+    top: -74%;
+    left: -20%; 
+    width:150%;
+    z-index: 5;
+}
+#controls-panel{
+    opacity: 80%;
+    position: absolute;
+    z-index: 9;
+   height: 97px;
+}
+.controlcss{
+    position: absolute;
+    top:430px;
+    left: 40.3%;
+
+
+}
+.mobile{
+    opacity: 0;
+    position: absolute;
+    z-index: -1;
+}
+
+@media screen and (max-width: 1650px){
+    .controlcss{
+        position: absolute;
+        top:380px;
+        left: 40.3%;
+    
+    
+    }
+}
+
+@media screen and (max-width: 1350px){
+    #loading {
+        position: absolute;
+        left: 30%;
+        top:3%;
+        width: 33%;
+       
+        z-index: 2;
+    }
+    .controlcss{
+        position: absolute;
+        top:330px;
+        left: 40.3%;
+    
+    
+    }
+    
+}
+@media screen and (max-width: 1000px){
+    #loading {
+        position: absolute;
+        left: 30%;
+        top:1%;
+        width: 33%;
+       
+        z-index: 2;
+    }
+    .controlcss{
+        position: absolute;
+        top:200px;
+        left: 40.3%;
+    
+    
+    }
+}
+@media screen and (max-width: 600px){
+    .desktop{
+        opacity: 0;
+        position: absolute;
+        z-index: -1;
+    }
+    .mobile{
+        opacity: 1;
+    }
+    .mobile IMG{
+        position: absolute;
+        left: -10px;
+        top: -10px;
+        z-index: 3;
+    }
+    #mobile-back {
+        position: absolute;
+        z-index: 2;
+    }
+    #back-gif {
+        left: 20%;
+        top: 10%;
+        width: 124%;
+        position: absolute;
+        z-index: -1;
+        filter:brightness(2);
+        opacity: 0.7;
+    }
+    .controls-mobile {
+        width: 365px;
+        height: 375px;
+    }
+    .inline-1 {
+        position: relative;
+        top: 130%;
+        left: 64%;
+    }
+    .inline-2 {
+        position: relative;
+        top: 163%;
+    }
+    #next-mobile {
+        left: 96%;
+    }
+    #prev-mobile {
+        left: 27%;
+    }
+    .inline-3 {
+        position: relative;
+        top: 197%;
+        left: 64%;
+    }
+}

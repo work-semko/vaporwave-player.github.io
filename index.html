@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Vaporwave</title>
+    <link rel="stylesheet" href="/style/style.css" type="text/css">
+    <script defer src="/js/cat.js"></script>
+    <script defer src="/js/comp-inside.js"></script>
+    <script defer src="/js/music.js"></script>
+    <script defer src="/js/mobile-inside.js"></script>
+</head>
+<body>
+<div class="desktop">
+    <div class="default">
+        <img src="/images/table.png" id="table">
+        <img src="/images/shadow.png" id="shadow">
+        <img src="" id="cat">
+        <script>setTimeout("viewImages()",500); </script>
+        <img src="/images/comp-rest.png" id="comp">
+        <img src="/images/loading-screen-4x.gif" id="loading">
+        <script> setTimeout("changeBack()",9550)</script>
+        <script> setTimeout("audioPlay()",9550)</script>
+        <img src="/images/window.png" id="window">
+    </div>
+    <div>
+        <img src="" id="player1">
+        <img src="" id="cassete-light">
+        <script> setTimeout("casseteLightON()",9700)</script>
+        <script> setTimeout("playerVisible()",9800)</script>
+        <img src="" id="left-right">
+        <script> setTimeout("lrON()",9850)</script>
+        <img src="" id="stereo">
+        <script> setTimeout("stereoVis()",10000)</script>
+    </div>
+    <!--Controls-->
+        
+    <div class="controls">
+       <div class="controlcss">
+        <img src="" id="control-folder" class="buttonsF">
+        <img src="" id="controls-panel">
+        <div class="clicks">
+            <a href="#" class="prev" onclick="prevAudio()">
+                <img src="" id="prevcss" class="buttons">
+            </a>
+            <a href="#" class="play" onclick="togglePlay()">
+                <img src=""  id="playcss" class="buttons">
+            </a> 
+            <a href="#" class="play-pause" onclick="togglePause()">
+                <img src="" id="pausecss" class="buttons">
+            </a>
+            <a href="#" class="next" onclick="nextAudio()">
+                <img src=""  id="nextcss" class="buttons">
+            </a>
+        </div>
+        </div>
+        <script> setTimeout("buttonsVis()",10450)</script>  
+        <audio id="curr-treck" src="/music/1.mp3"></audio>
+        <div class="audio-track">
+            <div class="time"></div>
+        </div>
+    </div>
+</div>  
+
+    <!--Mobile VErsion-->
+
+
+    <div class="mobile">
+        <img src="" id="mobile-back">
+        <script> setTimeout("mobileBack()",500)</script>
+    <div class="ipod-inside">
+        <img src="./mobile-images/ipod.png" class="ipod">
+        <img src="./mobile-images/shadow.png" class="shadow-mobile">
+        <img src="./mobile-images/circle.png" class="circle">
+        <img src="./mobile-images/back-gif.gif" id="back-gif">
+        <div class="controls-mobile">
+            <div class="inline-1">
+                <a onclick="togglePauseMobile()"><img src="./mobile-images/pause-mob.png" id="pause-mobile" > </a>
+            </div>
+            <div class="inline-2">
+               <a onclick="nextAudio()"> <img src="./mobile-images/next-mob.png" id="next-mobile"> </a>
+               <a onclick="prevAudio()"> <img src="./mobile-images/prev-mob.png" id="prev-mobile"> </a>
+            </div>
+            <div class="inline-3">
+               <a onclick="togglePlayMobile()"> <img src="./mobile-images/play-mob.png" id="play-mobile"> </a>
+            </div>
+        </div>
+    </div>
+    </div>
+</body>
+</html>
